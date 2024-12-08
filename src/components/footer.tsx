@@ -4,12 +4,12 @@ function Footer() {
   return (
     <footer className="bg-black text-white py-10">
       {/* Top Section: Social Media Icons */}
-      <div className="container mx-auto px-4 flex justify-between items-center">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
         {/* Title */}
-        <h2 className="text-2xl font-semibold"></h2>
-        
+        <h2 className="text-2xl font-semibold text-center md:text-left">Stay Connected</h2>
+
         {/* Social Media Icons */}
-        <div className="flex space-x-6 text-lg">
+        <div className="flex justify-center md:justify-end space-x-6 text-lg">
           <a href="#" className="hover:text-gray-400">
             <FaFacebookF />
           </a>
@@ -28,17 +28,14 @@ function Footer() {
         </div>
       </div>
 
-
       {/* Main Footer Sections */}
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 mt-8">
         {/* Find A Store Section */}
         <div>
           <h2 className="text-lg font-semibold mb-4">Find A Store</h2>
           <ul className="space-y-2">
-        
-          <h2 className="text-lg font-semibold mb-4">Become A Member</h2>
             <li>
-              <a href="#" className="text-lg font-semibold mb-4 hover:text-gray-400">
+              <a href="#" className="hover:text-gray-400">
                 Sign Up for Email
               </a>
             </li>
@@ -48,11 +45,10 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a href="#" className="text-lg font-semibold mb-4 hover:text-gray-400">
+              <a href="#" className="hover:text-gray-400">
                 Student Discounts
               </a>
             </li>
-            
           </ul>
         </div>
 
@@ -82,18 +78,13 @@ function Footer() {
             </li>
             <li>
               <a href="#" className="hover:text-gray-400">
-                Contact Us On Nick.com Inquiries
-              </a>
-            </li>
-            <li>
-              <a href="contact" className="hover:text-gray-400">
-                Contact Us On All Other Inquiries
+                Contact Us
               </a>
             </li>
           </ul>
         </div>
 
-        {/* About Nike Section */}
+        {/* About Section */}
         <div>
           <h2 className="text-lg font-semibold mb-4">About Nike</h2>
           <ul className="space-y-2">
@@ -121,17 +112,16 @@ function Footer() {
         </div>
       </div>
 
-
       {/* Footer Bottom Section */}
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+      <div className="container mx-auto px-4 mt-10">
+        <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 text-center space-y-4 md:space-y-0">
           {/* Left Text */}
-          <p className="text-center md:text-left">
-            India <span className="hidden md:inline">|</span> © 2023 Nike, Inc. All Rights Reserved
+          <p>
+            India | © 2023 Nike, Inc. All Rights Reserved
           </p>
 
           {/* Policy Links */}
-          <div className="flex space-x-4 mt-4 md:mt-0">
+          <div className="flex space-x-4">
             <a href="#" className="hover:text-white">
               Guides
             </a>
@@ -142,7 +132,7 @@ function Footer() {
               Terms of Use
             </a>
             <a href="#" className="hover:text-white">
-              Nike Privacy Policy
+              Privacy Policy
             </a>
           </div>
         </div>
@@ -152,6 +142,7 @@ function Footer() {
 }
 
 export default Footer;
+
 
 
 

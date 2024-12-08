@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
@@ -58,10 +58,12 @@ const BestOfAirMax = () => {
   return (
     <section className="bg-white py-10">
       {/* Heading Section */}
-      <div className="flex justify-between items-center mb-6 px-4">
-        <h1 className="text-4xl font-bold text-black">Best of Air Max</h1>
+      <div className="max-w-screen-xl mx-auto flex justify-between items-center mb-6 px-4 sm:px-6 lg:px-8">
+        <h1 className="text-2xl md:text-4xl font-bold text-black">
+          Best of Air Max
+        </h1>
         <div className="flex items-center">
-          <button className="mr-4 text-black py-2 px-6 rounded hover:bg-gray-200 transition">
+          <button className="mr-4 text-black py-2 px-4 md:px-6 rounded hover:bg-gray-200 transition">
             Shop
           </button>
           <div className="flex space-x-2">
@@ -82,24 +84,28 @@ const BestOfAirMax = () => {
       </div>
 
       {/* Product Grid */}
-      <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {products
           .slice(currentIndex, currentIndex + 3) // Display 3 products at a time
           .map((product) => (
             <div
               key={product.id}
-              className="border rounded-lg p-4 shadow-lg hover:shadow-xl transition"
+              className="border rounded-lg p-4 shadow-lg hover:shadow-xl transition bg-white"
             >
               <img
                 src={product.image}
                 alt={product.name}
-                className="w-full h-48 object-cover mb-4"
+                className="w-full h-48 object-cover mb-4 rounded"
               />
-              <h2 className="text-xl font-semibold text-gray-900 mb-2">
+              <h2 className="text-lg md:text-xl font-semibold text-gray-900 mb-2">
                 {product.name}
               </h2>
-              <p className="text-gray-500">{product.category}</p>
-              <p className="text-lg font-bold text-black mt-2">{product.price}</p>
+              <p className="text-sm md:text-base text-gray-500">
+                {product.category}
+              </p>
+              <p className="text-lg font-bold text-black mt-2">
+                {product.price}
+              </p>
             </div>
           ))}
       </div>
@@ -108,6 +114,7 @@ const BestOfAirMax = () => {
 };
 
 export default BestOfAirMax;
+
 
 
 
