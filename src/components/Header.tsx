@@ -26,13 +26,13 @@ const Header: React.FC = () => {
             />
             {/* Links */}
             <nav className="flex items-center space-x-4 sm:space-x-6 text-sm">
-              <a href="#" className="hover:text-gray-500">Find a Store</a>
+              <a href="Productslist" className="hover:text-gray-500">Find a Store</a>
               <span className="border-l border-gray-300 h-4"></span> {/* Vertical Line */}
-              <a href="#" className="hover:text-gray-500">Help</a>
+              <a href="contact" className="hover:text-gray-500">Help</a>
               <span className="border-l border-gray-300 h-4"></span> {/* Vertical Line */}
-              <a href="login" className="hover:text-gray-500">Join Us</a>
+              <a href="joinus" className="hover:text-gray-500">Join Us</a>
               <span className="border-l border-gray-300 h-4"></span> {/* Vertical Line */}
-              <a href="signup" className="hover:text-gray-500">Sign In</a>
+              <a href="signin" className="hover:text-gray-500">Sign In</a>
             </nav>
           </div>
         </div>
@@ -57,15 +57,15 @@ const Header: React.FC = () => {
             </div>
 
             {/* Navigation Links */}
-            <nav className={`hidden md:flex flex-grow justify-center items-center space-y-4 md:space-y-0 md:space-x-4 lg:space-x-6 text-sm flex-grow ${isOpen ? 'block' : 'hidden'} md:block`}>
+            <nav className={`hidden md:flex flex-grow justify-center items-center space-y-4 md:space-y-0 md:space-x-8 lg:space-x-8 text-sm flex-grow ${isOpen ? 'block' : 'hidden'} md:block`}>
               <h2 className="text-lg font-semibold">
                 <a href="#" className="hover:text-gray-500">NEW & FEATURED</a>
               </h2>
-              <a href="#" className="hover:text-gray-500">Men</a>
-              <a href="#" className="hover:text-gray-500">Women</a>
-              <a href="#" className="hover:text-gray-500">Kids</a>
-              <a href="#" className="hover:text-gray-500">Sale</a>
-              <a href="#" className="hover:text-gray-500">SNKRS</a>
+              <a href="menItems" className="hover:text-gray-500">Men</a>
+                <a href="womemItems" className="hover:text-gray-500">Women</a>
+                <a href="kidsItems" className="hover:text-gray-500">Kids</a>
+                <a href="sale" className="hover:text-gray-500">Sale</a>
+                <a href="snkrs" className="hover:text-gray-500">SNKRS</a>
             </nav>
 
             {/* Search Bar and Right Corner Icons */}
@@ -98,11 +98,11 @@ const Header: React.FC = () => {
                 <h2 className="text-lg font-semibold">
                   <a href="#" className="hover:text-gray-500">NEW & FEATURED</a>
                 </h2>
-                <a href="#" className="hover:text-gray-500">Men</a>
-                <a href="#" className="hover:text-gray-500">Women</a>
-                <a href="#" className="hover:text-gray-500">Kids</a>
-                <a href="#" className="hover:text-gray-500">Sale</a>
-                <a href="#" className="hover:text-gray-500">SNKRS</a>
+                <a href="menItems" className="hover:text-gray-500">Men</a>
+                <a href="womemItems" className="hover:text-gray-500">Women</a>
+                <a href="kidsItems" className="hover:text-gray-500">Kids</a>
+                <a href="sale" className="hover:text-gray-500">Sale</a>
+                <a href="snkrs" className="hover:text-gray-500">SNKRS</a>
               </nav>
             </div>
           )}

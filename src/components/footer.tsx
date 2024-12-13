@@ -77,7 +77,7 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-400">
+              <a href="contact" className="hover:text-gray-400">
                 Contact Us
               </a>
             </li>

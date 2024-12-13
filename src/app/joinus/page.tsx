@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 
-const Join: React.FC = () => {
+const Joinus: React.FC = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-lg">
+    <div className="flex items-center justify-center min-h-screen bg-white">
+      <div className="bg-white p-8 rounded-lg  w-full max-w-lg">
         <h1 className="text-2xl font-bold mb-6 text-center">BECOME A NIKE MEMBER</h1>
         <p className="text-center mb-6">
           Create your Nike Member profile and get first access to the very best of Nike products, inspiration and community.
@@ -89,6 +89,15 @@ const Join: React.FC = () => {
               required
             >
               <option value="India">India</option>
+              <option value="pakistan">pakistan</option>
+              <option value="Russia">Russia</option>
+              <option value="Canada">Canada</option>
+              <option value="China">China</option>
+              <option value="United States">United States</option>
+              <option value="Brazil">Brazil</option>
+              <option value="Australia">Australia</option>
+              <option value="Kazakhstan">Kazakhstan</option>
+
               {/* Add other countries as needed */}
             </select>
           </div>
@@ -124,11 +133,11 @@ const Join: React.FC = () => {
         </form>
 
         <div className="mt-6 text-center">
-          <p className="text-gray-700">Already a Member? <Link href="#" className="text-blue-500 hover:underline">Sign In</Link>.</p>
+          <p className="text-gray-700">Already a Member? <Link href="signin" className="text-blue-500 hover:underline">Sign In</Link>.</p>
         </div>
       </div>
     </div>
   );
 };
 
-export default Join;
+export default Joinus;

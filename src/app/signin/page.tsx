@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 
-const Login: React.FC = () => {
+const Signin: React.FC = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+    <div className="flex items-center justify-center min-h-screen bg-white">
+      <div className="bg-white p-8 rounded-lg  w-full max-w-md">
         <h1 className="text-2xl font-bold mb-6 text-center">YOUR ACCOUNT FOR EVERYTHING NIKE</h1>
         
         <form>
@@ -57,11 +57,17 @@ const Login: React.FC = () => {
         </form>
 
         <div className="mt-6 text-center">
-          <p className="text-gray-700">Not a Member? <Link href="#" className="text-blue-500 hover:underline">Join Us</Link>.</p>
+          <p className="text-gray-700">Not a Member? <Link href="joinus" className="text-blue-500 hover:underline">Join Us</Link>.</p>
         </div>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default Signin;
+
+
+
+
+
+
