@@ -60,13 +60,7 @@ const GearUpSection = () => {
       image: "/gairl2.png",
       category: "Women's",
     },
-    {
-      id: 11,
-      name: "Women's Lightweight Jacket",
-      price: "₹ 4,995",
-      image: "/gairl5.png",
-      category: "Women's",
-    },
+    
   ];
 
   const [currentMenIndex, setCurrentMenIndex] = useState(0);

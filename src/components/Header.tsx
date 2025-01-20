@@ -1,7 +1,10 @@
 "use client"
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
-import { FaSearch, FaHeart, FaShoppingBag, FaBars } from 'react-icons/fa'; // Import required icons
+import { IoBagOutline } from "react-icons/io5";
+import { CiHeart } from "react-icons/ci";
+import { FaSearch, FaHeart, FaBars } from 'react-icons/fa'; // Import required icons
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +29,7 @@ const Header: React.FC = () => {
             />
             {/* Links */}
             <nav className="flex items-center space-x-4 sm:space-x-6 text-sm">
-              <a href="Productslist" className="hover:text-gray-500">Find a Store</a>
+              <a href="Frenchicelist" className="hover:text-gray-500">Find a Store</a>
               <span className="border-l border-gray-300 h-4"></span> {/* Vertical Line */}
               <a href="contact" className="hover:text-gray-500">Help</a>
               <span className="border-l border-gray-300 h-4"></span> {/* Vertical Line */}
@@ -59,13 +62,13 @@ const Header: React.FC = () => {
             {/* Navigation Links */}
             <nav className={`hidden md:flex flex-grow justify-center items-center space-y-4 md:space-y-0 md:space-x-8 lg:space-x-8 text-sm flex-grow ${isOpen ? 'block' : 'hidden'} md:block`}>
               <h2 className="text-lg font-semibold">
-                <a href="#" className="hover:text-gray-500">NEW & FEATURED</a>
+                <a href="news" className="hover:text-gray-500">NEW & FEATURED</a>
               </h2>
-              <a href="menItems" className="hover:text-gray-500">Men</a>
-                <a href="womemItems" className="hover:text-gray-500">Women</a>
-                <a href="kidsItems" className="hover:text-gray-500">Kids</a>
-                <a href="sale" className="hover:text-gray-500">Sale</a>
-                <a href="snkrs" className="hover:text-gray-500">SNKRS</a>
+              <a href="man" className="hover:text-gray-500">Men</a>
+                <a href="women" className="hover:text-gray-500">Women</a>
+                <a href="kids" className="hover:text-gray-500">Kids</a>
+                <a href="/compo" className="hover:text-gray-500">Sale</a>
+                <a href="/compo/first" className="hover:text-gray-500">SNKRS</a>
             </nav>
 
             {/* Search Bar and Right Corner Icons */}
@@ -81,11 +84,11 @@ const Header: React.FC = () => {
               </div>
               {/* Right Corner Icons */}
               <div className="hidden md:flex  items-center space-x-4">
-                <button className="p-2 rounded-full hover:bg-gray-200">
-                  <FaHeart className="text-gray-600" />
+                <button className="p-2 ">
+                <CiHeart size={20}/>
                 </button>
-                <button className="p-2 rounded-full hover:bg-gray-200">
-                  <FaShoppingBag className="text-gray-600" />
+                <button className="p-2">
+                  <Link href="/seccompo/first"> <IoBagOutline size={15}/></Link>
                 </button>
               </div>
             </div>
@@ -98,11 +101,11 @@ const Header: React.FC = () => {
                 <h2 className="text-lg font-semibold">
                   <a href="#" className="hover:text-gray-500">NEW & FEATURED</a>
                 </h2>
-                <a href="menItems" className="hover:text-gray-500">Men</a>
-                <a href="womemItems" className="hover:text-gray-500">Women</a>
-                <a href="kidsItems" className="hover:text-gray-500">Kids</a>
-                <a href="sale" className="hover:text-gray-500">Sale</a>
-                <a href="snkrs" className="hover:text-gray-500">SNKRS</a>
+                <a href="man" className="hover:text-gray-500">Men</a>
+                <a href="women" className="hover:text-gray-500">Women</a>
+                <a href="kids" className="hover:text-gray-500">Kids</a>
+                <a href="/compo" className="hover:text-gray-500">Sale</a>
+                <a href="/compo/first" className="hover:text-gray-500">SNKRS</a>
               </nav>
             </div>
           )}

@@ -12,7 +12,7 @@ const HeroSection: React.FC = () => {
       Download the app to access everything Nike.
     </p>
       <a  
-        href="#" 
+        href="greatComp/first" 
         className="text-black font-bold hover:underline inline ml-2"
         >
         Get Your Great
