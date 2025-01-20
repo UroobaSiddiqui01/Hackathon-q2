@@ -64,7 +64,7 @@ const Header: React.FC = () => {
               <h2 className="text-lg font-semibold">
                 <a href="news" className="hover:text-gray-500">NEW & FEATURED</a>
               </h2>
-              <a href="man" className="hover:text-gray-500">Men</a>
+              <a href="men" className="hover:text-gray-500">Men</a>
                 <a href="women" className="hover:text-gray-500">Women</a>
                 <a href="kids" className="hover:text-gray-500">Kids</a>
                 <a href="/compo" className="hover:text-gray-500">Sale</a>
