@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { IoBagOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
-import { FaSearch, FaHeart, FaBars } from 'react-icons/fa'; // Import required icons
+import { FaSearch,  FaBars } from 'react-icons/fa'; // Import required icons
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -88,7 +88,7 @@ const Header: React.FC = () => {
                 <CiHeart size={20}/>
                 </button>
                 <button className="p-2">
-                  <Link href="/seccompo/first"> <IoBagOutline size={15}/></Link>
+                  <Link href="/compo/first"> <IoBagOutline size={15}/></Link>
                 </button>
               </div>
             </div>
@@ -101,7 +101,7 @@ const Header: React.FC = () => {
                 <h2 className="text-lg font-semibold">
                   <a href="#" className="hover:text-gray-500">NEW & FEATURED</a>
                 </h2>
-                <a href="man" className="hover:text-gray-500">Men</a>
+                <a href="men" className="hover:text-gray-500">Men</a>
                 <a href="women" className="hover:text-gray-500">Women</a>
                 <a href="kids" className="hover:text-gray-500">Kids</a>
                 <a href="/compo" className="hover:text-gray-500">Sale</a>
