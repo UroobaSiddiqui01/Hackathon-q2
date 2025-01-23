@@ -42,23 +42,25 @@ const BestOfAirMax = () => {
             key={product.id}
             className="bg-white border rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-4 flex flex-col items-center"
           >
-            <Link href={`/products/${product.slug.current}`}>
-            {product.image && (
-              <Image
-                src={urlFor(product.image).width(200).height(200).url() || ""}
-                alt={product.productName}
-                width={200}
-                height={200}
-                className="object-cover rounded"
-              />
-            )}
-            <h3 className="text-lg font-semibold mt-4 text-gray-900">
-              {product.productName}
-            </h3>
-            <p className="text-sm text-gray-500 mt-1">
-              `{product.price}
-              </p>
+            {product.image ? (
+              <Link href={`/products/${product.slug?.current || ""}`}>
+                <Image
+                  src={urlFor(product.image).width(200).height(200).url() || ""}
+                  alt={product.productName || "Product Image"}
+                  width={200}
+                  height={200}
+                  className="object-cover rounded"
+                />
+                <h3 className="text-lg font-semibold mt-4 text-gray-900">
+                  {product.productName}
+                </h3>
+                <p className="text-sm text-gray-500 mt-1">{product.price}</p>
               </Link>
+            ) : (
+              <div>
+                <p className="text-gray-500">No Image Available</p>
+              </div>
+            )}
           </div>
         ))}
       </div>
@@ -67,6 +69,7 @@ const BestOfAirMax = () => {
 };
 
 export default BestOfAirMax;
+
 
 
 
